@@ -550,7 +550,7 @@ def wait_for_gpu(gpu_id=None,
     .. code-block:: python
 
         def tune_func(config):
-            tune.util.wait_for_gpu()
+            tune.utils.wait_for_gpu()
             train()
 
         tune.run(tune_func, resources_per_trial={"GPU": 1}, num_samples=10)
